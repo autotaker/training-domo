@@ -17,7 +17,8 @@ git clone https://github.com/autotaker/training-domo.git
 
 ## 2. Install Python
 
-1. [Python 3.10のInstaller](https://www.python.org/downloads/release/python-3102/)をダウンロードしてPythonをインストールしてください。
+1. [Microsoft Store](https://www.microsoft.com/ja-jp/p/python-310/9pjpw5ldxlz5)からPython 3.10をインストールしてください。
+   - Windows以外の場合は [Python公式](https://www.python.org/downloads/release/python-3102/)からダウンロードしてください。
 1. Powershellを開き、Pythonのバージョンを確認してください。`3.10.2`が表示されればOKです。
 
    ```
@@ -30,9 +31,16 @@ Pipenvをインストールします。
 
 1. Powershellを開き、以下のコマンドで`pipenv`をインストールします。
 
-   ```
+   ```bash
    pip install --user pipenv
    ```
+
+   - 社内プロキシ等を使っている場合、SSLの証明書エラーが発生することがあります。
+     その場合はルート証明書をPEM形式で保存し、以下のコマンドでpipの`global.cert`オプションを設定してください。
+     
+     ```bash
+     pip config --user set global.cert {ルート証明書へのパス}
+     ```
 2. 以下のコマンドでバージョンを確認してください。
 
    ```
@@ -84,4 +92,15 @@ VSCode用Python Extension(`ms-python.python`)をインストールします。
      - `pipenv install`が成功しているか
      
      を確認してください
-     
+4. VSCodeからターミナルを開き、`python day1/hello.py`が実行できることを確認してください。
+   
+   ```Powershell
+   pythton day1/hello.py
+   ```
+
+   もしPowershellスクリプトを実行できないエラーが表示された場合、実行ポリシーを変更してください。
+
+   ```powerhsell
+   Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+   ```
+
