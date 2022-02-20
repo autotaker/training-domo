@@ -9,7 +9,7 @@ def convert_fizzbuzz(n: int) -> str:
     return s
 
 
-def fizzbuzz():
+def fizzbuzz() -> None:
     """
     1から100までの整数nに対して
     * nが3の倍数かつ5の倍数の時はFizzBuzz
