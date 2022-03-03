@@ -188,13 +188,18 @@ Pythonで変数や四則演算、if文が使えるようになる
 
 ## 単体テストの実行方法
 
+### ターミナルから
 以下のコマンドで単体テストを実行できます。
 
 ```powershell
 python -m pytest day1
 ```
 
-あるいは `test/test_implementme.py`を開いた状態でRun&Debugからも実行できます。
+### Testing パネルから
+VSCodeのTestingパネルを開くとテストの一覧が表示されます。
+試したいテストを選択してRunボタンまたはDebugボタンを押すと実行できます。
+
+![tests](./img/run-test.png)
 
 # Cheat Sheet
 
