@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 requests = "*"
 art = "*"
+faker = "*"
 
 [dev-packages]
 black = "*"
