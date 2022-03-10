@@ -79,7 +79,7 @@ if __name__ == "__main__":
 
     fake = faker.Faker("ja_JP")
     filename = sys.argv[1] if len(sys.argv) >= 2 else "day2/data/tickets.csv"
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(Ticket.headers())
         for ticket in generate(100, fake):

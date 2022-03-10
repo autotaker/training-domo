@@ -35,7 +35,7 @@ CSVには以下の情報が含まれています。
 ```python
 import csv
 if __name__ == "__main__":
-    with open("day2/data/tickets.csv", "r", newline="") as csvfile:
+    with open("day2/data/tickets.csv", "r", newline="", encoding="utf-8") as csvfile:
         # readerを作成`
         reader = csv.reader(csvfile)
         # headerの読み込み
