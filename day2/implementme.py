@@ -52,7 +52,7 @@ def rank_assignees(
 
 
 if __name__ == "__main__":
-    with open("day2/data/tickets.csv", "r", newline="") as f:
+    with open("day2/data/tickets.csv", "r", newline="", encoding="utf-8") as f:
         print("22-02のチケット数:", count_ticket_for_milestone(f, "22-02"))
         f.seek(0)
         print("22-03のチケット数:", count_ticket_for_milestone(f, "22-03"))
