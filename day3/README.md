@@ -9,6 +9,9 @@
 * [2. Python インタプリタを使う](https://docs.python.org/ja/3/tutorial/interpreter.html)
 
 ## モブプログラミング
-* [3. 形式ばらない Python の紹介](https://docs.python.org/ja/3/tutorial/introduction.html#an-informal-introduction-to-python)を進めてください。
+* [3. 形式ばらない Python の紹介](https://docs.python.org/ja/3/tutorial/introduction.html#an-informal-introduction-to-python)
+* [4. その他の制御フローツール](https://docs.python.org/ja/3/tutorial/controlflow.html)
+
+を進めてください。
 
 長いコードは一旦 implementme.py で書いてからインタプリタにコピーするのがおすすめです。
