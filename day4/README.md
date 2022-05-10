@@ -6,7 +6,7 @@ REST APIから目的のデータを取得できるようになる
 
 ## アジェンダ
 - APIからデータを取得しよう（ハンズオン）
-- 目的のデータを取得しよう（モブプロ）
+- 他のAPIにもアクセスしてみよう（モブプロ）
 
 ## APIからデータを取得しよう
 
@@ -77,7 +77,7 @@ PythonでAPIを叩くには[requests](https://requests-docs-ja.readthedocs.io/en
 handson.pyの`print_covid19_patients()`にコード例を載せています。
 
 ### パラメータの指定
-さて、今度は日付けで絞り込んでみましょう。以下のようなURLでアクセスすれば2022年5月8日公表のデータだけを絞り込む事ができます。
+さて、今度は日付で絞り込んでみましょう。以下のようなURLでアクセスすれば2022年5月8日公表のデータだけを絞り込む事ができます。
 
 ```url
 https://api.data.metro.tokyo.lg.jp/v1/Covid19Patient?from=2022-05-08&till=2022-05-08
@@ -139,3 +139,17 @@ Fetch Page: 5
 >>> len(result)
 4711
 ```
+
+## 他のAPIにもアクセスしてみよう
+
+### `/Covid19Patient`以外のエンドポイントからデータを取得してみよう
+[東京都OpenData API](https://portal.data.metro.tokyo.lg.jp/opendata-api/)の他のAPIからもデータを取得してみましょう。
+
+どのようなデータがあるか簡単に分析してみましょう。
+
+### [httpbin.org](http://httpbin.org/#/)で遊んでみよう
+
+REST APIの練習サイトとしてhttpbin.orgというものがあります。
+このサイトではさまざまなリクエストの送り方を試す事ができます。
+
+試しにリクエストを送ってみましょう。
