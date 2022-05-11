@@ -6,10 +6,9 @@
 | no. 　| title | time | goal |
 | ---- | ----- | ---- | ---- |
 | [day1](./day1) | 開発環境構築 | 1.5h | Pythonの開発環境を構築し、プログラムの実行、デバッグができるようになる|
-| [day2](./day2) | CSV操作1 | 45m| CSVファイル読み込みできるようになる |
-| day3 | CSV操作2 | |CSVファイルの加工・出力ができるようになる |
-| day4 | Pandas入門 | |  Pandasを使ってデータの分析をしてみる |
-| day5 | REST入門 | | REST APIを叩いてみる |
+| [day2](./day2) | CSV操作1 | 1.5h| CSVファイル読み込みできるようになる |
+| [day3](./day3) | Python文法 | 3h | Pythonの文法を学ぶ |
+| [day4](./day4) | REST入門1 | 1.5h | REST APIを叩いてみよう |
 | TBA  | TBA | | TBA |
 
 # 形式について
